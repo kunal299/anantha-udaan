@@ -73,10 +73,10 @@ body {
 }
 
 .brand { display: inline-flex; align-items: center; gap: 12px; }
-.brand-name { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--leaf-700); text-decoration: none; }
+.brand-name { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.5rem; color: var(--leaf-700); text-decoration: none; }
 .brand-logo { width: 42px; height: 42px; object-fit: contain; object-position: center; border-radius: 0; box-shadow: none; background: transparent; display: block; }
 
-.nav-actions { display: flex; gap: 10px; align-items: center; }
+.nav-actions { display: flex; gap: 5px; align-items: center; }
 .capsule { --ring: rgba(46,125,50,.2); display: inline-flex; align-items: center; justify-content: center; height: 36px; padding: 0 16px; border-radius: 999px; background: #f1f5f9; color: #0f172a; text-decoration: none; font-weight: 600; font-size: .95rem; border: 1px solid #e2e8f0; box-shadow: var(--shadow); transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
 .capsule:hover { transform: translateY(-1px); box-shadow: var(--shadow-lg); background: #e8f5e9; }
 .capsule:active { transform: translateY(0); }
@@ -441,7 +441,7 @@ body {
     padding: 0 8px;
   }
 
-  .brand-name { font-size: 0.95rem; }
+  .brand-name { font-size: 1.5rem; }
   .brand-logo { width: 36px; height: 36px; }
 
   .nav-actions {
@@ -450,7 +450,7 @@ body {
     margin-left: -8px;
     margin-right: -8px;
     justify-content: space-evenly;
-    gap: 8px;
+    gap: 4px;
     flex-wrap: nowrap;
     padding: 0 8px;
     overflow-x: auto;
