@@ -48,6 +48,69 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 
+  <!-- Financial Reports section styles -->
+  <style>
+    .financial-reports-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .financial-report-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .financial-report-preview {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      display: block;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .financial-report-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .financial-report-actions {
+      margin-top: auto;
+      padding-top: 4px;
+    }
+
+    .financial-report-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      width: 100%;
+    }
+
+    .financial-report-pdf-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 4 / 3;
+      font-size: 52px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    @media (max-width: 900px) {
+      .financial-reports-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
@@ -118,6 +181,7 @@
         <a class="capsule" href="#mission">Mission</a>
         <a class="capsule" href="#our-work">Our work</a>
         <a class="capsule" href="#presented">Recognitions</a>
+        <a class="capsule" href="#financial-reports">Financial Reports</a>
         <a class="capsule" href="#alumni">Alumni</a>
         <a class="capsule" href="#about">Contact us</a>
       </nav>
@@ -415,6 +479,108 @@
           <button class="btn primary donate-now-btn" aria-label="Donate Now">Donate Now</button>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Financial Reports -->
+  <section id="financial-reports" class="section container" aria-labelledby="financial-reports-heading">
+    <header class="section-header">
+      <h2 class="h2" id="financial-reports-heading">Financial Reports</h2>
+      <p class="muted">Financial statements and reports for transparency and accountability.</p>
+    </header>
+
+    <div class="financial-reports-grid">
+
+      <!-- Financial Statement (2024-25): replace the image filename below with the actual image file -->
+      <article class="card glow financial-report-card">
+        <a href="financial-statement-2024-25.jpeg"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="View Financial Statement 2024-25">
+          <img
+            src="financial-statement-2024-25.jpeg"
+            alt="Financial Statement (2024-25)"
+            class="financial-report-preview"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="financial-report-content">
+          <h3 class="h4">Financial Statement (2024-25)</h3>
+          <p class="muted-l">Financial statement for the financial year 2024-25.</p>
+
+          <div class="financial-report-actions">
+            <a
+              href="financial-statement-2024-25.jpeg"
+              class="btn white-capsule financial-report-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Financial Statement 2024-25"
+            >View Report</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Financial Statement (2025-26) -->
+      <article class="card glow financial-report-card">
+        <div class="financial-report-pdf-icon" aria-hidden="true">PDF</div>
+
+        <div class="financial-report-content">
+          <h3 class="h4">Financial Statement (2025-26)</h3>
+          <p class="muted-l">Financial statement for the financial year 2025-26.</p>
+
+          <div class="financial-report-actions">
+            <a
+              href="financial-statement-2025-26.pdf"
+              class="btn white-capsule financial-report-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Financial Statement 2025-26"
+            >View Financial Statement</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pie Chart (2025-26) -->
+      <article class="card glow financial-report-card">
+        <div class="financial-report-pdf-icon" aria-hidden="true">PDF</div>
+
+        <div class="financial-report-content">
+          <h3 class="h4">Financial Pie Chart (2025-26)</h3>
+          <p class="muted-l">Pie chart report for the financial year 2025-26.</p>
+
+          <div class="financial-report-actions">
+            <a
+              href="financial-pie-chart-2025-26.pdf"
+              class="btn white-capsule financial-report-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Financial Pie Chart 2025-26"
+            >View Pie Chart</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Financial Statement (2026-27) Interim -->
+      <article class="card glow financial-report-card">
+        <div class="financial-report-pdf-icon" aria-hidden="true">PDF</div>
+
+        <div class="financial-report-content">
+          <h3 class="h4">Financial Statement (2026-27) Interim</h3>
+          <p class="muted-l">Interim financial statement for the financial year 2026-27.</p>
+
+          <div class="financial-report-actions">
+            <a
+              href="financial-statement-2026-27-interim.pdf"
+              class="btn white-capsule financial-report-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Financial Statement 2026-27 Interim"
+            >View Report</a>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
 
